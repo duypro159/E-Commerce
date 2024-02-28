@@ -1,0 +1,58 @@
+// Grayscale
+$--Grayscale-Title-Active:#14142B;
+$--Grayscale-Body: #4E4B66;
+$--Grayscale-Label: #6E7191;
+$--Grayscale-Placeholder: #A0A3BD;
+$--Grayscale-Line: #D9DBE9;
+$--Grayscale-Input-Background: #EFF0F6;
+$--Grayscale-Background: #F7F7FC;
+$--Grayscale-Off-white: #FCFCFC;
+
+:root{
+    // DarkMode
+        // Primary
+        --Primary-Default: #5F2EEA;
+        --Primary-Dark: #2A00A2;
+        --Primary-Darkmode: #BCA4FF;
+        // Secondary
+        --Secondary-Default: #1CC8EE;
+        --Secondary-Dark: #0096B7;
+        --Secondary-Darkmode: #82E9FF;
+        // Error
+        --Error-Default: #ED2E7E;
+        --Error-Dark: #C30052;
+        --Error-Darkmode: #FF84B7;
+        // Success
+        --Success-Default: #00BA88;
+        --Success-Dark: #00966D;
+        --Success-Darkmode: #34EAB9;
+        // Warning
+        --Warning-Default: #F4B740;
+        --Warning-Dark: #946200;
+        --Warning-Darkmode: #FFD789;
+        // Gradient
+        --Gradient-Primary: linear-gradient(114deg, #7433FF 0%, #FFA3FD 100%);
+        --Gradient-Secondary: linear-gradient(114deg, #624AF2 0%, #50DDC3 100%);
+        --Gradient-Accent: linear-gradient(114deg, #EB0055 0%, #FFFA80 100%);
+    // NormalMode
+        // Primary
+        --Primary: #FFF;
+        --Primary1: #363738;
+        // Secondary
+        --Secondary: #F5F5F5;
+        --Secondary1: #FEFAF1;
+        --Secondary-2: #DB4444;
+        // Text
+        --Text: #FAFAFA;
+        --Text1: #7D8184;
+        --Text2: #000;
+        // button
+        --Button: #000;
+        --Button1: #0F6;
+        --Button2: #DB4444;
+        // Hover_Button
+        --Hover-Button: #E07575;
+        --Hover-Button1: #A0BCE0;
+        //Background
+        --BG:#fff;
+    }
