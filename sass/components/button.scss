@@ -1,0 +1,38 @@
+.button{
+    display: inline-flex;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    &--primary,&--small{
+        background: var(--Button2, #DB4444);
+        span {
+            font-weight: 500;
+            color: var(--Text, #FAFAFA);
+        }
+    }
+    &--secondary{
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        span {
+            font-weight: 500;
+            color: var(--Text2, #000);
+        }
+    }
+    &--small{
+        padding: 10px 48px;
+    }
+    &--secondary{
+        &:hover {
+            span {
+                color: var(--Text1, #7D8184);
+            }
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+    }
+    &--primary,&--small{
+        &:hover {
+            background: var(--Hover-Button, #E07575);
+        }
+    }
+}
