@@ -1,0 +1,15 @@
+@use "../../sass/abstracts/variable" as *;
+
+.search {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    background-color: var(--Secondary);
+    overflow: hidden;
+    padding: 7px 12px;
+    gap: 34px;
+    & input {
+        border: none;
+    }
+}
