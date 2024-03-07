@@ -1,0 +1,12 @@
+.email {
+
+    display: flex;
+    width: 217px;
+    padding: 12px 0px 12px 16px;
+    align-items: center;
+    gap: 32px;
+    border: 1.5px solid var(--Text2, #000);
+    & input {
+        overflow: hidden;
+    }
+}
