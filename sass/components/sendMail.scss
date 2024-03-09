@@ -1,12 +1,26 @@
-.email {
+@use "../../sass/base/resert" as *;
+@use "../../sass/base/typography" as *;
+@use "../../sass/base/general" as *;
 
+
+.email {
     display: flex;
     width: 217px;
-    padding: 12px 0px 12px 16px;
+    padding: 12px 15px 12px 15px;
     align-items: center;
-    gap: 32px;
-    border: 1.5px solid var(--Text2, #000);
+    gap: 20px;
+    border: 1.5px solid var(--Text);
+    border-radius: 4px;
+    background-color: transparent;
+
     & input {
         overflow: hidden;
+        border: none;
+        color: var(--Text);
+    }
+
+    & button {
+        display: flex;
+        flex-shrink: 0;
     }
 }
