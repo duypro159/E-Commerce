@@ -1,14 +1,17 @@
+include ./button.pug
 .container 
     h3 Cart Total 
     .sub
-        span Subtotal 
+        span Subtotal: 
         span.subtotal 1170$
+    hr
     .ship 
-        span Shipping
+        span Shipping:
         span.shipfee Free 
+    hr
     .tot 
-        span Total 
+        span Total: 
         span.total 1170$
-
-    button Process to checkout 
+    hr
+    +type_button('primary','Procees to checkout')
     

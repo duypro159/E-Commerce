@@ -1,0 +1,90 @@
+.clock {
+    position: relative;
+    display: flex;
+    gap: 15px;
+
+    & .dot {
+        color: #E07575;
+    }
+
+    & span {
+        color: var(--Text2, #000);
+
+        /* Heading/32PX Bold */
+        font-family: "Inter", sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        /* 93.75% */
+        letter-spacing: 1.28px;
+    }
+
+    #day {
+        &::before {
+            content: "Days";
+            position: absolute;
+            transform: translateY(-20px);
+            color: var(--Text2, #000);
+
+            /* Title/12PX Medium */
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            /* 150% */
+        }
+    }
+
+    #hour {
+        &::before {
+            content: "Hours";
+            position: absolute;
+            transform: translateY(-20px);
+            color: var(--Text2, #000);
+
+            /* Title/12PX Medium */
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            /* 150% */
+        }
+    }
+
+    #minute {
+        &::before {
+            content: "Minutes";
+            position: absolute;
+            transform: translateY(-20px);
+            color: var(--Text2, #000);
+
+            /* Title/12PX Medium */
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            /* 150% */
+        }
+    }
+
+    #second {
+        &::before {
+            content: "Senconds";
+            position: absolute;
+            transform: translateY(-20px);
+            color: var(--Text2, #000);
+
+            /* Title/12PX Medium */
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            /* 150% */
+        }
+    }
+}
