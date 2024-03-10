@@ -1,0 +1,73 @@
+
+doctype html
+html(lang="en")
+    head
+        link(rel='stylesheet' href='style.css')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
+        title Document
+    body 
+        footer.footer
+            .footer__content
+                .footer__column.footer__exclusive
+                    h3 Exclusive
+                    h4 Subscribe
+                    span Get 10% off your first order
+                    include ../../views/mixins/sendEmail.pug
+                .footer__column
+                    h4 Support
+                    ul.footer__links
+                        li.link 
+                            a(href="#") 111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.
+                        li.link 
+                            a(href="#") exclusive@gmail.com
+                        li.link 
+                            a(href="#") +88015-88888-9999
+                .footer__column
+                    h4 Account
+                    ul.footer__links
+                        li.link 
+                            a(href="#") My Account
+                        li.link 
+                            a(href="#") Login / Register
+                        li.link 
+                            a(href="#") Cart
+                        li.link 
+                            a(href="#") Wishlist
+                        li.link 
+                            a(href="#") Shop
+                .footer__column
+                    h4 Quick
+                    ul.footer__links
+                        li.link 
+                            a(href="#") Privacy Policy
+                        li.link 
+                            a(href="#") Terms Of Use
+                        li.link 
+                            a(href="#") FAQ
+                        li.link
+                            a(href="#") Contact
+                .footer__column.footer__app
+                    h4 Download App
+                    .footer__app__content
+                        span Save $3 with App New User Only
+                        .img_links
+                            a.qr(href="#")
+                                img(src="../../images/QRcode.svg", alt="QR")
+                            a.ggplay(href="#")
+                                img(src="../../images/GGPlay.svg", alt="GGPlay")
+                            a.app_store(href="#")
+                                img(src="../../images/AppStore.svg", alt="AppStore")
+                    .icon_links
+                        a(href="#")
+                            img(src="../../images/icons/facebook.svg", alt="facebook")
+                        a(href="#")
+                            img(src="../../images/icons/twitter.svg", alt="twitter")
+                        a(href="#")
+                            img(src="../../images/icons/instagram.svg", alt="instagram")
+                        a(href="#")
+                            img(src="../../images/icons/linkedin.svg", alt="linkedin")
+            .footer__bottom
+                img(src="../../images/icons/copyright.svg", alt="linkedin")
+                span Copyright Rimel 2022. All right reserved

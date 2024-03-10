@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     <title>Document</title>
-</head>
-<body>
-    <div class="product cart">
-        <div class="product__top">
-            <span class="tag">NEW</span>
-            <img src="../images/icons/gucci_bag.svg" alt="">
-            <div class="icons">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="17" cy="17" r="17" fill="white"/>
-                    <path d="M13 10C10.7912 10 9 11.7396 9 13.8859C9 15.6185 9.7 19.7305 16.5904 23.8873C16.7138 23.961 16.8555 24 17 24C17.1445 24 17.2862 23.961 17.4096 23.8873C24.3 19.7305 25 15.6185 25 13.8859C25 11.7396 23.2088 10 21 10C18.7912 10 17 12.3551 17 12.3551C17 12.3551 15.2088 10 13 10Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                    
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="17" cy="17" r="17" fill="white"/>
-                    <path d="M26.257 15.962C26.731 16.582 26.731 17.419 26.257 18.038C24.764 19.987 21.182 24 17 24C12.818 24 9.236 19.987 7.743 18.038C7.51238 17.7411 7.3872 17.3759 7.3872 17C7.3872 16.6241 7.51238 16.2589 7.743 15.962C9.236 14.013 12.818 10 17 10C21.182 10 24.764 14.013 26.257 15.962V15.962Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M17 20C18.6569 20 20 18.6569 20 17C20 15.3431 18.6569 14 17 14C15.3431 14 14 15.3431 14 17C14 18.6569 15.3431 20 17 20Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <button>Add To Cart</button>
+  </head>
+  <body> 
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__column footer__exclusive">
+          <h3>Exclusive</h3>
+          <h4>Subscribe</h4><span>Get 10% off your first order</span>
+          <div class="email"> 
+            <input type="text" placeholder="Enter your email">
+            <button> <img src="../../images/icons/icon-send.svg" alt=""></button>
+          </div>
         </div>
-        <h4 class="product__name">Gucci duffle bag</h4>
-        <div class="product__bottom">
-            <span class="current_price">$960</span>
-            <span class="prev_price">$1160</span>
-            <div class="product__rating">
-                <div class="stars">
-                    <svg class="fullstar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
-                        <path d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z" fill="#FFAD33"/>
-                    </svg>
-                    <svg class="fullstar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
-                        <path d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z" fill="#FFAD33"/>
-                    </svg>
-                    <svg class="fullstar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
-                        <path d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z" fill="#FFAD33"/>
-                    </svg>
-                    <svg class="fullstar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
-                        <path d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z" fill="#FFAD33"/>
-                    </svg>
-                    <svg class="fullstar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
-                        <path d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z" fill="#FFAD33"/>
-                    </svg>
-                </div>
-                <span class="votes">(65)</span>
-            </div>
+        <div class="footer__column">
+          <h4>Support</h4>
+          <ul class="footer__links">
+            <li class="link"> <a href="#">111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</a></li>
+            <li class="link"> <a href="#">exclusive@gmail.com</a></li>
+            <li class="link"> <a href="#">+88015-88888-9999</a></li>
+          </ul>
         </div>
-        <div class="product__colors">
-            <input type="radio" name="color" id="color1" value="color1" checked="true">
-            <label class="first" for="color1">
-            </label>
-            <input type="radio" name="color" id="color2" value="color2">
-            <label class="second" for="color2"></label>
+        <div class="footer__column">
+          <h4>Account</h4>
+          <ul class="footer__links">
+            <li class="link"> <a href="#">My Account</a></li>
+            <li class="link"> <a href="#">Login / Register</a></li>
+            <li class="link"> <a href="#">Cart</a></li>
+            <li class="link"> <a href="#">Wishlist</a></li>
+            <li class="link"> <a href="#">Shop</a></li>
+          </ul>
         </div>
-    </div>
-</body>
+        <div class="footer__column">
+          <h4>Quick</h4>
+          <ul class="footer__links">
+            <li class="link"> <a href="#">Privacy Policy</a></li>
+            <li class="link"> <a href="#">Terms Of Use</a></li>
+            <li class="link"> <a href="#">FAQ</a></li>
+            <li class="link"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__app">
+          <h4>Download App</h4>
+          <div class="footer__app__content"><span>Save $3 with App New User Only</span>
+            <div class="img_links"><a class="qr" href="#"><img src="../../images/QRcode.svg" alt="QR"></a><a class="ggplay" href="#"><img src="../../images/GGPlay.svg" alt="GGPlay"></a><a class="app_store" href="#"><img src="../../images/AppStore.svg" alt="AppStore"></a></div>
+          </div>
+          <div class="icon_links"><a href="#"><img src="../../images/icons/facebook.svg" alt="facebook"></a><a href="#"><img src="../../images/icons/twitter.svg" alt="twitter"></a><a href="#"><img src="../../images/icons/instagram.svg" alt="instagram"></a><a href="#"><img src="../../images/icons/linkedin.svg" alt="linkedin"></a></div>
+        </div>
+      </div>
+      <div class="footer__bottom"><img src="../../images/icons/copyright.svg" alt="linkedin"><span>Copyright Rimel 2022. All right reserved</span></div>
+    </footer>
+  </body>
 </html>

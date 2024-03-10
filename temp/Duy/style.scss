@@ -1,3 +1,6 @@
+@use '../../sass/components/sendMail.scss';
+
+
 *,
 *:before,
 *:after {
@@ -204,6 +207,103 @@ body {
       height: 100%;
       border-radius: 100%;
       background-color: #E07575;
+    }
+  }
+}
+
+.footer{
+  background-color: black;
+  &__content{
+    padding: 80px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 87px;
+  }
+  &__column{
+    display: flex;
+    flex-direction: column;
+    color: var(--Text, #FAFAFA);
+    gap: 24px;
+    h4{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 140%; 
+    }
+    a{
+      color: var(--Text, #FAFAFA);
+      text-decoration: none;
+    }
+  }
+  &__links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .link{
+      max-width: 175px;
+    }
+  }
+  &__exclusive{
+    h3 {
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: 0.72px;
+    }
+    .email {
+      margin-top: -8px;
+      border-radius: 4px;
+      border: 1.5px solid var(--Text, #FAFAFA);
+    }
+  }
+  &__app{
+    &__content{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      span{
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0.7;
+      }
+      .img_links{
+        display: grid;
+        grid-template-areas: 'qr ggplay'
+                             'qr appstore';
+        column-gap: 8px;
+        row-gap: 4px;
+        .qr{
+          grid-area: qr;
+        }
+        .ggplay{
+          grid-area: ggplay;
+        }
+        .appstore{
+          grid-area: appstore;
+        }
+      }
+    }
+    .icon_links{
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  }
+  &__bottom{
+    padding: 16px 0px 24px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba($color: #FFF, $alpha: 0.4);
+    span{
+      color: var(--Primary, #FFF);
+      opacity: 0.5;
+    }
+    img{
+      opacity: 1;
     }
   }
 }
