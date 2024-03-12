@@ -1,0 +1,21 @@
+include ../../views/mixins/button.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="./404.css")
+    body 
+        include ../../views/Layout/header.pug
+
+        main 
+            .roadmap 
+
+            .error 
+                h1 404 Not Found
+                p Your visited page not found. You may go home page.
+            .go-back 
+                +type_button("primary","Back to home page")
+        include ../../views/Layout/footer.pug

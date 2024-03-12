@@ -1,0 +1,50 @@
+@use "../../sass/layout/footer.scss" as *;
+@use "../../sass/layout/header.scss" as *;
+@use "../../sass/base/general" as *;
+@use "../../sass/base/resert" as *;
+@use "../../sass/base/typography" as *;
+@use "../../sass/components/button.scss" as *;
+
+main {
+    & .error {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+        margin-top: 140px;
+        margin-bottom: 80px;
+
+        & h1 {
+            color: #000;
+
+            /* Heading/110PX Medium */
+            font-family: Inter;
+            font-size: 110px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 115px;
+            /* 104.545% */
+            letter-spacing: 3.3px;
+        }
+
+        & p {
+            color: var(--Text2, #000);
+
+            /* Title/16PX Regular */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            /* 150% */
+        }
+    }
+
+    & .go-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+}
