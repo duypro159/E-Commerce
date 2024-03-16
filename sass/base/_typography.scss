@@ -1,9 +1,20 @@
 @use "../abstracts" as abst;
 body {
-    color: var(--Text2);
-    min-height: 100vh;
-    font-weight: 400;
+    font-family: abst.$font-primary;
+    color: --BG;
     font-size: 16px;
-    line-height: 1.5;
-    font-family: Poppins;
+    font-weight: 400;
+    padding: 0px 135px;
+    line-height: 150%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
 }

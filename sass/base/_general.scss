@@ -1,7 +1,2 @@
-body {
-    color: var(--Text2);
-    min-height: 100vh;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-}
+@forward "./reset";
+@forward "./typography";

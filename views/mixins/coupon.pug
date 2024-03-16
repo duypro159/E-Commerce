@@ -1,5 +1,5 @@
 include ./button.pug
-
-.contain 
-    input(type="text" placeholder="Coupon Code")
-    +type_button('primary','Apply Coupon')
+mixin coupon
+    .contain 
+        input(type="text" placeholder="Coupon Code")
+        +type_button('primary','Apply Coupon')

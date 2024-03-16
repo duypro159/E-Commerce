@@ -9,14 +9,14 @@
 	flex-shrink: 0;
 	padding: 24px 55px;
 	gap: 16px;
-	color: $color_1;
+	color: --Text2;
 	.img--white {
 		display: none;
 	}
 	&:hover {
 		background: var(--Secondary-2, #DB4444);
 		box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
-		color: $color_2;
+		color: --Primary;
 		.img--white {
 			display: block;
 		}
