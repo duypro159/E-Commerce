@@ -107,6 +107,25 @@
             display: flex;
             flex-direction: row;
             gap: 16px;
+            .active{
+                position: relative;
+            }
+            .active:after{
+                content: attr(data-count);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 16px;
+                font-size: 12px;
+                height: 16px;
+                border-radius: 100rem;
+                color: var(--Text);
+                background-color: var(--Secondary-2);
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(25%,-5%);
+            }
         }
     }
 
