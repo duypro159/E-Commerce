@@ -1,4 +1,7 @@
 .button{
+    span{
+        pointer-events: none;
+    }
     display: inline-flex;
     padding: 16px 48px;
     justify-content: center;

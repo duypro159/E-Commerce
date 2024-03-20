@@ -167,7 +167,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .main {
@@ -214,6 +214,9 @@ h6 {
   align-items: center;
   gap: 10px;
   border-radius: 4px;
+}
+.button span {
+  pointer-events: none;
 }
 .button--primary, .button--small {
   background: var(--Button2, #DB4444);
@@ -513,6 +516,7 @@ h6 {
   max-width: 270px;
 }
 .product__top {
+  caret-color: transparent;
   background: var(--Secondary, #F5F5F5);
   position: relative;
   border-radius: 4px;
@@ -521,18 +525,20 @@ h6 {
   justify-content: center;
   align-items: center;
   flex: 1;
+  flex-grow: 0;
 }
 .product__top .img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 57px 70px;
+  width: 270px;
+  height: 250px;
+  flex-shrink: 0;
 }
 .product__top .img img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 .product__top .tag {
   position: absolute;
@@ -544,6 +550,9 @@ h6 {
   background: var(--Button1, #0F6);
   top: 12px;
   left: 12px;
+}
+.product__top .tag:hover {
+  filter: brightness(80%);
 }
 .product__top .icons {
   position: absolute;
@@ -562,21 +571,28 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   flex-shrink: 0;
   border-radius: 0px 0px 4px 4px;
   width: 100%;
-  font-size: 12px;
   background-color: #000;
   padding: 11px 0px;
+}
+.product__top button span, .product__top button i, .product__top:hover button span, .product__top:hover button i {
+  display: inline-block;
   color: #fff;
+  font-size: 12px;
 }
 .product__top button {
   display: none;
 }
 .product__name {
-  margin-top: auto;
   font-weight: 500;
   margin-bottom: 8px;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product__bottom {
   display: flex;
@@ -584,6 +600,7 @@ h6 {
   flex-wrap: wrap;
 }
 .product__bottom .current_price {
+  width: 40%;
   display: inline-block;
   color: var(--Secondary-2, #DB4444);
   caret-color: #000;
@@ -591,7 +608,7 @@ h6 {
 }
 .product__bottom .prev_price {
   display: flex;
-  width: 50%;
+  width: 40%;
   color: var(--Button, #000);
   text-decoration-line: line-through;
   opacity: 0.5;
@@ -599,7 +616,6 @@ h6 {
   font-weight: 500;
 }
 .product__rating {
-  margin-top: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -852,6 +868,25 @@ h6 {
   display: flex;
   flex-direction: row;
   gap: 16px;
+}
+.header-contain .frame552 .active {
+  position: relative;
+}
+.header-contain .frame552 .active:after {
+  content: attr(data-count);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  font-size: 12px;
+  height: 16px;
+  border-radius: 100rem;
+  color: var(--Text);
+  background-color: var(--Secondary-2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(25%, -5%);
 }
 .header:after {
   content: "";
