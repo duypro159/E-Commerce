@@ -242,7 +242,7 @@ h6 {
   background: var(--Hover-Button, #E07575);
 }
 
-.cart {
+.cartMain {
   width: 1170px;
   height: 72px;
   padding: 24px 40px;
@@ -254,7 +254,7 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.cart-container span {
+.cartMain-container span {
   color: var(--Text2, #000);
   /* Title/16PX Regular */
   font-family: Poppins;
@@ -321,7 +321,7 @@ h6 {
   /* 150% */
 }
 
-.container {
+.cartTotal-container {
   width: 470px;
   height: 324px;
   border-radius: 4px;
@@ -331,22 +331,22 @@ h6 {
   flex-direction: column;
   gap: 16px;
 }
-.container .sub {
+.cartTotal-container .sub {
   display: flex;
   justify-content: space-between;
 }
-.container .ship {
+.cartTotal-container .ship {
   display: flex;
   justify-content: space-between;
 }
-.container .tot {
+.cartTotal-container .tot {
   display: flex;
   justify-content: space-between;
 }
-.container hr {
+.cartTotal-container hr {
   border: 1px solid #ccc;
 }
-.container h3 {
+.cartTotal-container h3 {
   color: var(--Text2, #000);
   /* Title/20PX Medium */
   font-family: Poppins;
@@ -356,7 +356,7 @@ h6 {
   line-height: 28px;
   /* 140% */
 }
-.container .button {
+.cartTotal-container .button {
   margin: 0 auto;
 }
 
@@ -527,6 +527,7 @@ h6 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 57px 70px;
 }
 .product__top .img img {
   max-width: 100%;
@@ -614,42 +615,6 @@ h6 {
   font-weight: 600;
   opacity: 0.5;
   font-size: 14px;
-}
-.product__colors {
-  caret-color: transparent;
-  margin-top: 8px;
-  display: flex;
-  gap: 8px;
-}
-.product__colors input {
-  display: none;
-}
-.product__colors input:checked + label {
-  border: 2px solid #000;
-}
-.product__colors label {
-  width: 22px;
-  height: 22px;
-  padding: 2px;
-  border-radius: 100%;
-  cursor: pointer;
-  background-color: #fff;
-}
-.product__colors .first::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  background-color: #A0BCE0;
-}
-.product__colors .second::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  background-color: #E07575;
 }
 
 .search {

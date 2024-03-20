@@ -15,7 +15,6 @@
     }
     &__content{
         display: grid;
-        background-color: white;
         grid-template-columns: repeat(4,1fr);
         column-gap: 60px;
         overflow-x: auto;
