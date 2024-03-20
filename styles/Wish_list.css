@@ -17,6 +17,41 @@
 .wish_list__content {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 57px;
+  overflow: auto;
+}
+
+.product__suggestion {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.product__suggestion .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__suggestion .title h4 {
+  display: flex;
+  font-size: 20px;
+  line-height: 130%;
+  align-items: center;
+  justify-content: center;
+}
+.product__suggestion .title h4:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 40px;
+  background-color: var(--Secondary-2);
+  margin-right: 16px;
+}
+.product__suggestion .suggestion__lists {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   gap: 57px;
   overflow: auto;
 }

@@ -1,3 +1,12 @@
+@mixin items{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 57px;
+    overflow: auto;
+}
+
+
 .wish_list{
     display: flex;
     flex-direction: column;
@@ -14,9 +23,35 @@
         }
     }
     &__content{
+        @include items;
+    }
+}
+.product__suggestion{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .title{
         display: flex;
-        flex-wrap: nowrap;
-        gap: 57px;
-        overflow: auto;
+        justify-content: space-between;
+        align-items: center;
+        h4 {
+            display: flex;
+            font-size: 20px;
+            line-height: 130%;
+            align-items: center;
+            justify-content: center;
+            &:before{
+                content: '';
+                display: block;
+                width: 20px;
+                height: 40px;
+                background-color: var(--Secondary-2);
+                margin-right: 16px;
+            }
+        }
+    }
+    .suggestion__lists{
+        @include items;
     }
 }
