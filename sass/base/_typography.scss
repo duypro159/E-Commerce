@@ -1,7 +1,7 @@
 @use "../abstracts" as abst;
 body {
     font-family: abst.$font-primary;
-    color: --BG;
+    background-color: var(--BG);
     font-size: 16px;
     font-weight: 400;
     padding: 0px 135px;

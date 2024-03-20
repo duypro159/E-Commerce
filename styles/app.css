@@ -152,7 +152,7 @@ button {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: --BG;
+  background-color: var(--BG);
   font-size: 16px;
   font-weight: 400;
   padding: 0px 135px;
@@ -506,18 +506,29 @@ h6 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
+  height: auto;
+  max-width: 270px;
 }
 .product__top {
   background: var(--Secondary, #F5F5F5);
   position: relative;
-  width: 270px;
-  height: 250px;
   border-radius: 4px;
   margin-bottom: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
+  flex: 1;
+}
+.product__top .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.product__top .img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 .product__top .tag {
   position: absolute;
@@ -559,6 +570,7 @@ h6 {
   color: #fff;
 }
 .product__name {
+  margin-top: auto;
   font-weight: 500;
   margin-bottom: 8px;
 }

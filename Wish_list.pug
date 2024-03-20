@@ -1,0 +1,16 @@
+extend ./views/layout/layout
+append stylesheet
+    link(rel="stylesheet", href="./styles/Wish_list.css")
+block title
+    title Wish List
+block main
+    section.wish_list 
+        .wish_list__top 
+            span.title Wishlist(4)
+            +type_button('secondary','Move All To Bag')
+        .wish_list__content
+            +product('gucci_bag','Gucci duffle bag',960,1160,0)
+            +product('raincoat','Gucci duffle bag',960,1160,0)
+            +product('gucci_bag','Gucci duffle bag',960,1160,0)
+            +product('gucci_bag','Gucci duffle bag',960,1160,0)
+        

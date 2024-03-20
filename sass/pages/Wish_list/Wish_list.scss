@@ -1,0 +1,23 @@
+.wish_list{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title{
+            font-size: 20px;
+            line-height: 130%;
+        }
+    }
+    &__content{
+        display: grid;
+        background-color: white;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 60px;
+        overflow-x: auto;
+    }
+}
