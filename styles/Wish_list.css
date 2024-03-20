@@ -15,10 +15,10 @@
   line-height: 130%;
 }
 .wish_list__content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 60px;
-  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 57px;
+  overflow: auto;
 }
 
 /*# sourceMappingURL=Wish_list.css.map */
