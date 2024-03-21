@@ -1,4 +1,4 @@
-include ../../views/mixins/button.pug
+include ../../mixins/button.pug
 
 doctype html
 html(lang="en")
@@ -8,7 +8,7 @@ html(lang="en")
         title Document
         link(rel="stylesheet", href="./404.css")
     body 
-        include ../../views/Layout/header.pug
+        include ../../Layout/header.pug
 
         main 
             .roadmap 
@@ -18,4 +18,6 @@ html(lang="en")
                 p Your visited page not found. You may go home page.
             .go-back 
                 +type_button("primary","Back to home page")
-        include ../../views/Layout/footer.pug
+        include ../../Layout/footer.pug
+
+        script(src="./404/js")

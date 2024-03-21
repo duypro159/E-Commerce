@@ -1,0 +1,106 @@
+
+.main{
+    padding-left: 0;
+}
+.login {
+    margin: 60px 0px 140px 0px;
+    display: flex;
+    justify-content: space-between;
+    & .im {
+        margin-left: 0px;
+    }
+
+    & .form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+
+        max-width: 370px;
+        width: 100%;
+
+        & .head {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            & .log {
+                color: var(--Text2, #000);
+
+                /* Heading/36PX Medium */
+                font-family: Inter;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                /* 83.333% */
+                letter-spacing: 1.44px;
+            }
+
+            & .note {
+                color: var(--Text2, #000);
+
+                /* Title/16PX Regular */
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                /* 150% */
+            }
+        }
+
+        & .body {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            max-width: 370px;
+            width: 100%;
+
+            & input {
+                max-width: 370px;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #000;
+
+                &::placeholder {
+                    color: var(--Text2, #000);
+
+                    /* Title/16PX Regular */
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    opacity: 0.4;
+                }
+            }
+        }
+
+        & .bott {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            max-width: 370px;
+            width: 100%;
+
+            & .more {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & a{
+                    color: var(--Secondary-2, #DB4444);
+                    
+                    /* Title/16PX Regular */
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 150% */
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.main {
+  padding-left: 0;
+}
+
+.sigin {
+  margin: 60px 0px 140px 0px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1350px;
+}
+.sigin .form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 370px;
+  width: 100%;
+}
+.sigin .form .head {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sigin .form .head .log {
+  color: var(--Text2, #000);
+  /* Heading/36PX Medium */
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 83.333% */
+  letter-spacing: 1.44px;
+}
+.sigin .form .head .note {
+  color: var(--Text2, #000);
+  /* Title/16PX Regular */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+.sigin .form .body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 370px;
+  width: 100%;
+}
+.sigin .form .body input {
+  max-width: 370px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.sigin .form .body input::placeholder {
+  color: var(--Text2, #000);
+  /* Title/16PX Regular */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  opacity: 0.4;
+}
+.sigin .form .bott {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 370px;
+  width: 100%;
+  gap: 32px;
+}
+.sigin .form .bott .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.sigin .form .bott .more span {
+  color: var(--Text2, #000);
+  /* Title/16PX Regular */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+.sigin .form .bott .more a {
+  color: var(--Text2, #000);
+  /* Title/16PX Medium */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+}
+.sigin .form .bott .sign {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 370px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=signin.css.map */

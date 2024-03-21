@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./404.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8c27315e86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="../../../styles/app.css">
+    <link rel="stylesheet" href="../../../styles/signin.css">
   </head>
   <body> 
     <header class="header"> 
@@ -22,23 +31,32 @@
         <div class="logo">Exclusive</div>
         <div class="link-website"><a href="">Home</a><a href="">Contact</a><a href="">About</a><a href="">Sign Up </a></div>
         <div class="frame552"> 
-          <button><img src="../../images/icons/Wishlist.svg" alt=""></button>
-          <button> <img src="../../images/icons/Cart1.svg" alt=""></button>
+          <button class="HeartIcons"><img src="../../images/icons/Wishlist.svg" alt=""></button>
+          <button class="CartIcons"><img src="../../images/icons/Cart1.svg" alt=""></button>
         </div>
       </div>
     </header>
-    <main> 
-      <div class="roadmap"> </div>
-      <div class="error"> 
-        <h1>404 Not Found</h1>
-        <p>Your visited page not found. You may go home page.</p>
+    <div class="main"> 
+      <div class="sigin">
+        <div class="im"> <img src="../../../images/sign.png" alt=""></div>
+        <div class="form"> 
+          <div class="head"><span class="log">Create an account</span><span class="note">Enter your details below</span></div>
+          <div class="body"> 
+            <input type="text" placeholder="Name">
+            <input type="Email" placeholder="Email or phone number" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}|[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input type="Password" placeholder="Password">
+          </div>
+          <div class="bott"> 
+            <div class="sign"> 
+              <button class="button button--primary"><span>Create Account</span></button>
+            </div>
+            <div class="more"> <span>Already have account?</span><a href="../Log_in/login.html">Log In</a></div>
+          </div>
+        </div>
       </div>
-      <div class="go-back"> 
-        <button class="button button--primary" onclick="goToAnotherPage()"><span>Back to home page</span></button>
-      </div>
-    </main>
+    </div>
     <footer class="footer">
-      <div class="footer__content"
+      <div class="footer__content">
         <div class="footer__column footer__exclusive">
           <h3>Exclusive</h3>
           <h4>Subscribe</h4><span>Get 10% off your first order</span>
@@ -80,14 +98,5 @@
       </div>
       <div class="footer__bottom"><img src="../../images/icons/copyright.svg" alt="linkedin"><span>Copyright Rimel 2022. All right reserved</span></div>
     </footer>
-    <script >
-        function goToAnotherPage() {
-        // Change the URL to the desired page within the same website
-        var pageUrl = "../../../index.html";
-        
-        // Redirect to the specified page
-        window.location.href = pageUrl;
-      }
-    </script>
   </body>
 </html>

@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <title>Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8c27315e86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="../../../styles/app.css">
+    <link rel="stylesheet" href="../../../styles/login.css">
   </head>
   <body> 
     <header class="header"> 
@@ -22,29 +31,31 @@
         <div class="logo">Exclusive</div>
         <div class="link-website"><a href="">Home</a><a href="">Contact</a><a href="">About</a><a href="">Sign Up </a></div>
         <div class="frame552"> 
-          <div class="search">
-            <input type="text" placeholder="What are you looking for?">
-            <button> 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                <path d="M20 20L16.2223 16.2156M18.3158 11.1579C18.3158 13.0563 17.5617 14.8769 16.2193 16.2193C14.8769 17.5617 13.0563 18.3158 11.1579 18.3158C9.2595 18.3158 7.43886 17.5617 6.0965 16.2193C4.75413 14.8769 4 13.0563 4 11.1579C4 9.2595 4.75413 7.43886 6.0965 6.0965C7.43886 4.75413 9.2595 4 11.1579 4C13.0563 4 14.8769 4.75413 16.2193 6.0965C17.5617 7.43886 18.3158 9.2595 18.3158 11.1579V11.1579Z" stroke="black" stroke-width="1.5" stroke-linecap="round"></path>
-              </svg>
-            </button>
-          </div>
-          <button><img src="../../images/icons/Wishlist.svg" alt=""></button>
-          <button> <img src="../../images/icons/Cart1.svg" alt=""></button>
+          <button class="HeartIcons"><img src="../../images/icons/Wishlist.svg" alt=""></button>
+          <button class="CartIcons"><img src="../../images/icons/Cart1.svg" alt=""></button>
         </div>
       </div>
     </header>
-    <main> </main>
+    <div class="main"> 
+      <div class="login"> <img src="../../../images/sign.png" alt="">
+        <div class="form"> 
+          <div class="head"><span class="log">Log in to Exclusive</span><span class="note">Enter your details below</span></div>
+          <div class="body"> 
+            <input type="text" placeholder="Email or Phone Number">
+            <input type="Password" placeholder="Password">
+          </div>
+          <div class="bott">
+            <button class="button button--small"><span>Log In</span></button>
+            <div class="more"> <a href="">Forget Password?</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer__content">
         <div class="footer__column footer__exclusive">
           <h3>Exclusive</h3>
           <h4>Subscribe</h4><span>Get 10% off your first order</span>
-          <div class="email"> 
-            <input type="text" placeholder="Enter your email">
-            <button> <img src="../../images/icons/icon-send.svg" alt=""></button>
-          </div>
         </div>
         <div class="footer__column">
           <h4>Support</h4>

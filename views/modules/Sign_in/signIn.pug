@@ -1,0 +1,25 @@
+extend ../../layout/layout.pug
+append stylesheet
+    link(rel="stylesheet", href="../../../styles/app.css")
+    link(rel="stylesheet", href="../../../styles/signin.css")
+block title
+    title Sign In
+block main 
+    .sigin
+        .im 
+            img(src="../../../images/sign.png", alt="")
+        .form 
+            .head
+                span.log Create an account
+                span.note Enter your details below
+            .body 
+                input(type="text" placeholder="Name")
+                input(type="Email" placeholder="Email or phone number" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}|[0-9]{3}-[0-9]{3}-[0-9]{4}")
+                input(type="Password" placeholder="Password")
+            .bott 
+                .sign 
+                    +type_button("primary","Create Account")
+                    include ../../mixins/googleSignUp.pug
+                .more 
+                    span Already have account?
+                    a(href="../Log_in/login.html") Log In
