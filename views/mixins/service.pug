@@ -1,6 +1,7 @@
 mixin service(icon, title, content)
     .service
         .service__icon
-        img(src=`../../images/icons/${icon}.svg` alt='')
+            img(src=`../../../images/icons/${icon}.svg` alt='') 
+            //- Nam changed src for about page
         h3.service__title= title
         span.service__content= content 
