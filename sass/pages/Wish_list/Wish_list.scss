@@ -54,4 +54,9 @@
     .suggestion__lists{
         @include items;
     }
+    .suggestion__lists--active{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 57px;
+    }
 }

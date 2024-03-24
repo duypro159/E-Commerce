@@ -1,0 +1,24 @@
+extend ./views/layout/layout
+append stylesheet
+    link(rel="stylesheet", href="./styles/cart.css")
+block title
+  title Shopping Cart
+block main
+    section.roadmap 
+        span.rootPath Home /
+        span.path Cart
+    section.list__shoppingCart 
+        +cartMain()
+        ul.shoppingCarts
+            - var products =[{product_img:"controller",product_name:"Product 1",price:"$100"},{product_img:"controller",product_name:"Product 2",price:"$200"}]
+            each product in products
+                li
+                    +cartSection(product.product_img,product.product_name,product.price)
+        .list__shoppingCart__button
+            +type_button('secondary','Return To Shop')
+            +type_button('secondary','Update Cart')
+    section.purchase 
+        +coupon()
+        +cartTotal()
+block script 
+    script(src="./js/cart.js") 

@@ -1,0 +1,45 @@
+ul {
+  list-style-type: none;
+}
+
+.roadmap {
+  margin: 80px 0px;
+  color: var(--Text2);
+  font-size: 14px;
+}
+.roadmap .rootPath {
+  display: inline-block;
+  opacity: 0.5;
+  word-spacing: 12px;
+}
+.roadmap .path {
+  display: inline-block;
+  margin-left: 12px;
+  opacity: 1;
+}
+
+.list__shoppingCart {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.list__shoppingCart .shoppingCarts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.list__shoppingCart__button {
+  margin-top: -16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 140px;
+}
+
+/*# sourceMappingURL=cart.css.map */

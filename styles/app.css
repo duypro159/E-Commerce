@@ -215,20 +215,13 @@ h6 {
   gap: 10px;
   border-radius: 4px;
 }
-.button span {
-  pointer-events: none;
-}
 .button--primary, .button--small {
   background: var(--Button2, #DB4444);
-}
-.button--primary span, .button--small span {
   font-weight: 500;
   color: var(--Text, #FAFAFA);
 }
 .button--secondary {
   border: 1px solid rgba(0, 0, 0, 0.5);
-}
-.button--secondary span {
   font-weight: 500;
   color: var(--Text2, #000);
 }
@@ -236,18 +229,15 @@ h6 {
   padding: 10px 48px;
 }
 .button--secondary:hover {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
-.button--secondary:hover span {
   color: var(--Text1, #7D8184);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .button--primary:hover, .button--small:hover {
   background: var(--Hover-Button, #E07575);
 }
 
 .cartMain {
-  width: 1170px;
-  height: 72px;
+  width: 100%;
   padding: 24px 40px;
   border-radius: 4px;
   background: var(--Primary);
@@ -269,8 +259,7 @@ h6 {
 }
 
 .cartSection {
-  width: 1170px;
-  height: 72px;
+  width: 100%;
   border-radius: 4px;
   background: var(--Primary);
   /* Categogy/5 */
