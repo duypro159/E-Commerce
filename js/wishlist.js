@@ -102,5 +102,11 @@ window.onload = function () {
             }
         };
         //See All
+        const seeAll=document.querySelector(".title  .button");
+        seeAll.addEventListener("click",(e)=>{
+            const sgList=document.querySelector('.suggestion__lists');
+            sgList.classList.toggle("suggestion__lists--active");
+            e.target.textContent=e.target.textContent==="See All"?"See Less":"See All";
+        });
     }
 };

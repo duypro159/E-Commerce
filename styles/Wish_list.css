@@ -55,5 +55,10 @@
   gap: 57px;
   overflow: auto;
 }
+.product__suggestion .suggestion__lists--active {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 57px;
+}
 
 /*# sourceMappingURL=Wish_list.css.map */
