@@ -1,1 +1,195 @@
 extend ./views/layout/layout
+
+append stylesheet 
+    link(rel="stylesheet", href= "./styles/home.css")
+block title
+    title Home 
+block main 
+    section.home 
+        .block-top-home 
+            .menu-main
+                .listcate 
+                    span Woman’s Fashion
+                    img(src="../../images/icons/DropNgang.svg", alt="")
+                .listcate 
+                    span Men’s Fashion
+                    button 
+                        img(src="../../images/icons/DropNgang.svg", alt="")
+                .listcate 
+                    span Electronics
+                    button                         
+                        img(src="../../images/icons/DropNgang.svg", alt="")
+                .listcate 
+                    span Home & Lifestyle
+                    button 
+                        img(src="../../images/icons/DropNgang.svg", alt="")
+                .listcate
+                    span Medicine
+                    button 
+                        img(src="../../images/icons/DropNgang.svg", alt="")
+                .listcate
+                    span Sports & Outdoor
+                    img(src="../../images/icons/DropNgang.svg", alt="")
+                .listcate 
+                    span Baby’s & Toys
+                    img(src="../../images/icons/DropNgang.svg", alt="")
+                .listcate
+                    span Groceries & Pets
+                    img(src="../../images/icons/DropNgang.svg", alt="")
+                .listcate
+                    span Health & Beauty
+                    img(src="../../images/icons/DropNgang.svg", alt="")
+            .slidingbar 
+                img(src="../../images/banner1.png", alt="")
+        .block-flashsale 
+            .blocktop 
+                .topleft 
+                    .title 
+                        .tittop 
+                            .rec 
+                            span Today's
+                        span.tit Flash Sales
+                    .saleclock
+                        +flashSaleClock
+                .butt 
+                    button 
+                        img(src="./images/icons/icons_arrow-left.svg", alt="")
+                    button
+                        img(src="./images/icons/arrow-right.svg", alt="")
+            .blockbody 
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+            .blockbottom 
+                +type_button('primary','View all products')
+        .block-category 
+            .blocktop 
+                .topleft 
+                    .title 
+                        .tittop 
+                            .rec 
+                            span Categories
+                        span.tit Browse By Category
+                .butt 
+                    button 
+                        img(src="./images/icons/icons_arrow-left.svg", alt="")
+                    button
+                        img(src="./images/icons/arrow-right.svg", alt="")
+            .blockbody 
+                +category(black_img, white_img, category_name)
+                +category(black_img, white_img, category_name)
+                +category(black_img, white_img, category_name)
+                +category(black_img, white_img, category_name)
+                +category(black_img, white_img, category_name)
+                +category(black_img, white_img, category_name)
+        .block-bestsale
+            .blocktop 
+                .topleft 
+                    .title 
+                        .tittop 
+                            .rec 
+                            span This Month
+                        span.tit Best Selling Products
+                .butt 
+                    +type_button('primary','View all')
+            .blockbody 
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+        .block-product 
+            .blocktop 
+                .topleft 
+                    .title 
+                        .tittop 
+                            .rec 
+                            span Our Products
+                        span.tit Explore Our Products
+                .butt 
+                    button 
+                        img(src="./images/icons/icons_arrow-left.svg", alt="")
+                    button
+                        img(src="./images/icons/arrow-right.svg", alt="")
+            .blockbody 
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+                .listitem 
+                    +product(image,name,cur,prev='',rating)
+            .blockbottom 
+                +type_button('primary','View all products')
+        .block-featured
+            .blocktop 
+                .topleft 
+                    .title 
+                        .tittop 
+                            .rec 
+                            span Featured
+                        span.tit New Arrival
+            .blockbody 
+                +arrivalproduct(
+                    'PlayStation 5',
+                    'Black and White version of the PS5 coming out on sale.',
+                    'ps5'
+                )
+        .fullservices
+            +service(
+                    'shield-tick',
+                    '10.5k ',
+                    'Sallers active our site'
+                )
+            +service(
+                    'shield-tick',
+                    '10.5k ',
+                    'Sallers active our site'
+                )
+            +service(
+                    'shield-tick',
+                    '10.5k ',
+                    'Sallers active our site'
+                )
+        .backtotop 
+            button(type="button" , id="backTop") 
+                img(src="./images/icons/arrow-right.svg", alt="")
+            script.
+                var button = document.getElementById('backTop');
+                button.addEventListener('click', function() {
+                    document.body.scrollIntoView({ behavior: 'smooth' });
+                });
+        .frame600 
+            .block_left 
+                span.cate Categories
+                h1 Enhance Your Music Experience
+                +flashSaleClock 
+                +type_button('primary','Shop now!')
+            img(src="./images/jbl.png", alt="")

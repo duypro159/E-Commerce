@@ -678,6 +678,49 @@ h6 {
   flex-shrink: 0;
 }
 
+.arrival-product {
+  background-color: black;
+  position: relative;
+  width: fit-content;
+}
+.arrival-product .headingarrival {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+}
+.arrival-product .headingarrival h2 {
+  color: var(--Text, #FAFAFA);
+  /* Heading/24PX SemiBold */
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 100% */
+  letter-spacing: 0.72px;
+}
+.arrival-product .headingarrival p {
+  color: var(--Text, #FAFAFA);
+  /* Title/14PX Regular */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+.arrival-product .headingarrival a {
+  color: #FFF;
+  /* Title/16PX Medium */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
 .footer {
   background-color: black;
 }
