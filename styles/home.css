@@ -355,8 +355,18 @@
 }
 .home .frame600 {
   display: flex;
-  padding: 16px;
+  padding: 40px;
   background-color: #000;
+  margin-bottom: 70px;
+  height: 500px;
+  justify-content: space-between;
+}
+.home .frame600 .block_left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 440px;
+  width: 100%;
 }
 .home .frame600 .block_left .cate {
   color: var(--Button1, #0F6);
@@ -367,7 +377,7 @@
   font-weight: 600;
   line-height: 20px; /* 125% */
 }
-.home .frame600 .block_left h1 {
+.home .frame600 .block_left .titleframe600 {
   color: var(--Text, #FAFAFA);
   /* Heading/48PX SemiBold */
   font-family: Inter;
@@ -377,6 +387,122 @@
   line-height: 60px; /* 125% */
   letter-spacing: 1.92px;
   margin-bottom: 10px;
+}
+.home .frame600 .block_left .clock {
+  gap: 24px;
+}
+.home .frame600 .block_left .clock #day {
+  background-image: url("../../../images/Ellipse.svg");
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.home .frame600 .block_left .clock #day::after {
+  content: "Days";
+  position: absolute;
+  transform: translateY(-8px);
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 163.636% */
+  bottom: 0;
+}
+.home .frame600 .block_left .clock #day::before {
+  content: "";
+}
+.home .frame600 .block_left .clock #hour {
+  background-image: url("../../../images/Ellipse.svg");
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .frame600 .block_left .clock #hour::after {
+  content: "Hours";
+  position: absolute;
+  transform: translateY(-8px);
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 163.636% */
+  bottom: 0;
+}
+.home .frame600 .block_left .clock #hour::before {
+  content: "";
+}
+.home .frame600 .block_left .clock #minute {
+  background-image: url("../../../images/Ellipse.svg");
+  width: 62px;
+  height: 62px;
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .frame600 .block_left .clock #minute::after {
+  content: "Minutes";
+  position: absolute;
+  transform: translateY(-8px);
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 163.636% */
+  bottom: 0;
+}
+.home .frame600 .block_left .clock #minute::before {
+  content: "";
+}
+.home .frame600 .block_left .clock #second {
+  background-image: url("../../../images/Ellipse.svg");
+  width: 62px;
+  height: 62px;
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .frame600 .block_left .clock #second::after {
+  content: "Seconds";
+  position: absolute;
+  transform: translateY(-8px);
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 163.636% */
+  bottom: 0;
+}
+.home .frame600 .block_left .clock #second::before {
+  content: "";
+}
+.home .frame600 .block_left .clock span {
+  color: var(--Text2, #000);
+  /* Title/16PX Semibold */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+}
+.home .frame600 .block_left .clock .dot {
+  display: none;
+}
+.home .frame600 .forview {
+  width: 600px;
+  height: 420px;
+  padding: 45px 16px;
 }
 
 .blockbody::-webkit-scrollbar {

@@ -116,6 +116,14 @@ block main
                     +product(image,name,cur,prev='',rating)
                 .listitem 
                     +product(image,name,cur,prev='',rating)
+        .frame600 
+            .block_left 
+                span.cate Categories
+                span.titleframe600 Enhance Your Music Experience
+                +flashSaleClock 
+                +type_button('primary','Shop now!')
+            .forview 
+                img(src="./images/jbl.png", alt="")
         .block-product 
             .blocktop 
                 .topleft 
@@ -186,10 +194,3 @@ block main
                 button.addEventListener('click', function() {
                     document.body.scrollIntoView({ behavior: 'smooth' });
                 });
-        .frame600 
-            .block_left 
-                span.cate Categories
-                h1 Enhance Your Music Experience
-                +flashSaleClock 
-                +type_button('primary','Shop now!')
-            img(src="./images/jbl.png", alt="")

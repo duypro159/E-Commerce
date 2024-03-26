@@ -370,9 +370,17 @@
     }
     & .frame600{
         display: flex;
-        padding: 16px;
+        padding: 40px;
         background-color: #000;
+        margin-bottom: 70px;
+        height: 500px;
+        justify-content: space-between;
         & .block_left{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            max-width: 440px;
+            width: 100%;
             & .cate{
                 color: var(--Button1, #0F6);
                 /* Title/16PX Semibold */
@@ -382,7 +390,7 @@
                 font-weight: 600;
                 line-height: 20px; /* 125% */
             }
-            & h1{
+            & .titleframe600{
                 color: var(--Text, #FAFAFA);
                 /* Heading/48PX SemiBold */
                 font-family: Inter;
@@ -393,6 +401,124 @@
                 letter-spacing: 1.92px;
                 margin-bottom: 10px;
             }
+            & .clock{
+                gap: 24px;
+                #day{
+                    background-image: url('../../../images/Ellipse.svg');
+                    width: 62px;
+                    height: 62px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    flex-shrink: 0;
+                    
+                    &::after{
+                        content: "Days";
+                        position: absolute;
+                        transform: translateY(-8px);
+                        color: var(--Text2, #000);
+                        font-family: Poppins;
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px; /* 163.636% */
+                        bottom: 0;
+                    }
+                    &::before{
+                        content: "";
+                    }
+                }
+                #hour{
+                    background-image: url('../../../images/Ellipse.svg');
+                    width: 62px;
+                    height: 62px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &::after{
+                        content: "Hours";
+                        position: absolute;
+                        transform: translateY(-8px);
+                        color: var(--Text2, #000);
+                        font-family: Poppins;
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px; /* 163.636% */
+                        bottom: 0;
+                    }
+                    &::before{
+                        content: "";
+                    }
+                }
+                #minute{
+                    background-image: url('../../../images/Ellipse.svg');
+                    width: 62px;
+                    height: 62px;
+                    border-radius: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &::after{
+                        content: "Minutes";
+                        position: absolute;
+                        transform: translateY(-8px);
+                        color: var(--Text2, #000);
+                        font-family: Poppins;
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px; /* 163.636% */
+                        bottom: 0;
+                    }
+                    &::before{
+                        content: "";
+                    }
+                }
+                #second{
+                    background-image: url('../../../images/Ellipse.svg');
+                    width: 62px;
+                    height: 62px;
+                    border-radius: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &::after{
+                        content: "Seconds";
+                        position: absolute;
+                        transform: translateY(-8px);
+                        color: var(--Text2, #000);
+                        font-family: Poppins;
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px; /* 163.636% */
+                        bottom: 0;
+                    }
+                    &::before{
+                        content: "";
+                    }
+                }
+                & span{
+                    color: var(--Text2, #000);
+                    /* Title/16PX Semibold */
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 20px; /* 125% */
+                }
+                & .dot{
+                    display: none;
+                }
+            }
+        }
+        & .forview{
+            width: 600px;
+            height: 420px;
+            padding: 45px 16px;
         }
     }
 }

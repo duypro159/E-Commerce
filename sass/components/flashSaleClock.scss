@@ -73,7 +73,7 @@
 
     #second {
         &::before {
-            content: "Senconds";
+            content: "Seconds";
             position: absolute;
             transform: translateY(-20px);
             color: var(--Text2, #000);
