@@ -1,0 +1,133 @@
+.Bill{
+    margin-bottom: 140px;
+    .title{
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 83.333%;
+        letter-spacing: 1.44px;
+        margin-bottom: 48px;
+    }
+    .form__detail{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 173px;
+        .form{
+            display: flex;
+            flex-direction: column;
+            flex:1;
+            &>label{
+                display: inline-block;
+                margin-bottom: 8px;
+                color: var(--Text2, #000);
+                opacity: 0.4;
+            }
+            .required::after{
+                content: "*";
+                color: var(--Secondary-2);
+            }
+            &>input{
+                padding: 18px 12px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                outline: none;
+                border: none;
+                margin-bottom: 32px;
+                border-radius: 4px;
+                background: var(--Secondary);
+            }
+            .checkBox{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                input{
+                    display: none;
+                }
+                .customCheckbox{
+                    i{
+                        color: transparent;
+                    }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 1;
+                    flex-grow: 0;
+                    padding: 4px;
+                    background-color: var(--Secondary-2);
+                    border-radius: 4px;
+                }
+                input:checked + .customCheckbox{
+                    i{
+                        color: var(--Secondary);
+                    }
+                }
+            }
+        }
+        .details{
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            .detail{
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                span{
+                    display: inline-block;
+                }
+                .desc{
+                    width: 70%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    // gap: 210px;
+                }
+            }
+            .payByBank{
+                max-width: 85.5%;
+                display: flex;
+                justify-content: space-between;
+                .list_methods{
+                    display: flex;
+                }
+            }
+            .method{
+                input{
+                    width: 20px;
+                    height: 20px;
+                }
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+            .cartTotal-container{
+                max-width: 85.5%;
+                border: none;
+                height: auto;
+                padding: 0px;
+                h3{
+                    display: none;
+                }
+                button{
+                    display: none;
+                }
+                .tot+hr{display: none;}
+            }
+            .coupon{
+                .contain{
+                    width: 100%;
+                    justify-content: space-between;
+                    gap: 16px;
+                    width: 100%;
+                }
+            }
+            .place_order{
+                display: flex;
+                justify-content: flex-start;
+                
+            }
+        }
+    }
+}
