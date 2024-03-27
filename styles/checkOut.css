@@ -1,0 +1,131 @@
+.Bill {
+  margin-bottom: 140px;
+}
+.Bill .title {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 83.333%;
+  letter-spacing: 1.44px;
+  margin-bottom: 48px;
+}
+.Bill .form__detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 173px;
+}
+.Bill .form__detail .form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.Bill .form__detail .form > label {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--Text2, #000);
+  opacity: 0.4;
+}
+.Bill .form__detail .form .required::after {
+  content: "*";
+  color: var(--Secondary-2);
+}
+.Bill .form__detail .form > input {
+  padding: 18px 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  outline: none;
+  border: none;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  background: var(--Secondary);
+}
+.Bill .form__detail .form .checkBox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.Bill .form__detail .form .checkBox input {
+  display: none;
+}
+.Bill .form__detail .form .checkBox .customCheckbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-grow: 0;
+  padding: 4px;
+  background-color: var(--Secondary-2);
+  border-radius: 4px;
+}
+.Bill .form__detail .form .checkBox .customCheckbox i {
+  color: transparent;
+}
+.Bill .form__detail .form .checkBox input:checked + .customCheckbox i {
+  color: var(--Secondary);
+}
+.Bill .form__detail .details {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.Bill .form__detail .details .detail {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.Bill .form__detail .details .detail span {
+  display: inline-block;
+}
+.Bill .form__detail .details .detail .desc {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Bill .form__detail .details .payByBank {
+  max-width: 85.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.Bill .form__detail .details .payByBank .list_methods {
+  display: flex;
+}
+.Bill .form__detail .details .method {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.Bill .form__detail .details .method input {
+  width: 20px;
+  height: 20px;
+}
+.Bill .form__detail .details .cartTotal-container {
+  max-width: 85.5%;
+  border: none;
+  height: auto;
+  padding: 0px;
+}
+.Bill .form__detail .details .cartTotal-container h3 {
+  display: none;
+}
+.Bill .form__detail .details .cartTotal-container button {
+  display: none;
+}
+.Bill .form__detail .details .cartTotal-container .tot + hr {
+  display: none;
+}
+.Bill .form__detail .details .coupon .contain {
+  width: 100%;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+.Bill .form__detail .details .place_order {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*# sourceMappingURL=checkOut.css.map */

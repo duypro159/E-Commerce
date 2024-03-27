@@ -1,0 +1,60 @@
+extend ./views/layout/layout
+append stylesheet
+    link(rel="stylesheet", href="./styles/checkOut.css")
+block title
+  title CheckOut
+block main
+    +RoadMap('AccountMy / Account / Product / View Cart / ','CheckOut')
+    section.Bill
+        h3.title Billing Details
+        .form__detail 
+            form.form(action="") 
+                label(for="name").required First Name
+                input(type="text", name="name", id="name", placeholder="",required)
+                label(for="companyName") Company Name
+                input(type="text", name="companyName", id="companyName", placeholder="")
+                label(for="streetAdress").required Street Address
+                input(type="text", name="streetAdress", id="streetAdress", placeholder="",required)
+                label(for="apartment") Apartment, floor, etc. (optional)
+                input(type="text", name="apartment", id="apartment", placeholder="")
+                label(for="city").required Town/City
+                input(type="text", name="city", id="city", placeholder="",required)
+                label(for="phone").required Phone Number
+                input(type="text", name="phone", id="phone", placeholder="",required)
+                label(for="email").required Email Address
+                input(type="text", name="email", id="email", placeholder="",required)
+                .checkBox
+                    input(type="checkbox", name="saveInfo", id="saveInfo")
+                    label(for="saveInfo").customCheckbox
+                        i.fa-solid.fa-check 
+                    label(for="saveInfo") Save this information for faster check-out next time
+            .details 
+                .detail
+                    img(src="./images/controller.png", alt="")
+                    .desc 
+                        span.name controller
+                        span.price $50
+                .detail
+                    img(src="./images/controller.png", alt="")
+                    .desc 
+                        span.name controller
+                        span.price $50
+                +cartTotal()
+                .payByBank
+                    .method
+                        input(type="radio", name="payment", id="bank", checked)
+                        label(for="bank") Bank
+                    .list_methods
+                        img(src="./images/icons/Bkask.svg", alt="")
+                        img(src="./images/icons/visa.svg", alt="")
+                        img(src="./images/icons/master.svg", alt="")
+                        img(src="./images/icons/nagad.svg", alt="")
+                .method 
+                    input(type="radio", name="payment", id="cash")
+                    label(for="cash") Cash on delivery
+                .coupon
+                    +coupon()
+                .place_order
+                    +type_button('primary','Place Order')
+
+
