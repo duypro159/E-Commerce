@@ -1,0 +1,57 @@
+extend ./views/layout/layout
+append stylesheet
+    link(rel="stylesheet", href="./styles/account.css")
+block title
+  title My Account
+block main
+    .RoadMap__container
+        +RoadMap('Home /','My Account')
+        span Welcome!
+    section.main__container
+        section.sidebar
+            .sidebar_element
+                h4.sidebar__title Manage My Account
+                ul.sidebar_directory
+                    li 
+                        a(href="#") My Profile
+                    li 
+                        a(href="#") Address Book
+                    li 
+                        a(href="#") My Payment Options
+            .sidebar_element
+                h4.sidebar__title My Orders
+                ul.sidebar_directory
+                    li 
+                         a(href="#") My Returns
+                    li 
+                        a(href="#") My Cancellations
+            .sidebar_element
+                h4.sidebar__title My WishList
+        section.form 
+            form.Profile(action="" )
+                h3.tile Edit Your Profile
+                .name_section
+                    .first
+                        label(for="fname") First Name
+                        input(type="text", name="fname", id="fname",placeholder="Md")
+                    .last
+                        label(for="lname") Last Name
+                        input(type="text", name="lname", id="lname",placeholder="Rimel") 
+                .other_section
+                    .mail
+                        label(for="email") Email
+                        input(type="email", name="email", id="email",placeholder="rimel1111@gmail.com")
+                    .address
+                        label(for="address") Address
+                        input(type="text", name="address", id="address",placeholder="Kingston, 5236, United State")
+                .pass_section 
+                    label(for="current_password") Password Changes
+                    input(type="password", name="current_password", id="current_password",placeholder="Current Passwod")
+                    input(type="password", name="new_password", id="new_password",placeholder="New Passwod")
+                    input(type="password", name="confirm_password", id="confirm_password",placeholder="Confirm New Passwod")
+                .button_section
+                    span Cancel
+                    +type_button('primary','Save Changes')
+
+
+    

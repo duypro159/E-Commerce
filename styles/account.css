@@ -1,0 +1,101 @@
+.RoadMap__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: flex-start;
+  margin-bottom: 140px;
+}
+.main__container .sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  gap: 16px;
+}
+.main__container .sidebar .sidebar_element {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main__container .sidebar .sidebar_element .sidebar__title {
+  font-weight: 500;
+}
+.main__container .sidebar .sidebar_element .sidebar_directory {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 35px;
+}
+.main__container .sidebar .sidebar_element .sidebar_directory a {
+  text-decoration: none;
+  color: var(--Text2);
+  opacity: 0.5;
+}
+.main__container .form {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 40px 80px;
+  background: var(--Primary, #FFF);
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+}
+.main__container .form .Profile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.main__container .form .Profile .tile {
+  color: var(--Secondary-2, #DB4444);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  margin-bottom: -8px;
+}
+.main__container .form .Profile label {
+  display: block;
+  margin-bottom: 8px;
+}
+.main__container .form .Profile input {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 4px;
+  background: var(--Secondary, #F5F5F5);
+  border: none;
+}
+.main__container .form .Profile .name_section, .main__container .form .Profile .other_section {
+  display: flex;
+  gap: 50px;
+}
+.main__container .form .Profile .name_section > * {
+  flex-grow: 1;
+}
+.main__container .form .Profile .other_section > * {
+  flex-grow: 1;
+}
+.main__container .form .Profile .pass_section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main__container .form .Profile .pass_section label {
+  margin-bottom: -8px;
+}
+.main__container .form .Profile .button_section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  align-items: center;
+}
+.main__container .form .Profile .button_section span {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=account.css.map */
