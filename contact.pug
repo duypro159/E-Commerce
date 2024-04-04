@@ -1,0 +1,30 @@
+extend ./views/layout/layout
+append stylesheet
+    link(rel="stylesheet", href="./styles/contact.css")
+block title
+    title Contact
+block main
+    +RoadMap('Home / ','Contact')
+    section.detail_form
+        .detail 
+            .detail__top
+                .call_us
+                    img(src="./images/icons/icons_phones_with_backgroundRed.svg", alt="white_phone")
+                    h4 Call To Us
+                span We are available 24/7, 7 days a week.
+                span.support_phoneNum Phone: +8801611112222
+            .line 
+            .detail__bottom
+                .write_us
+                    img(src="./images/icons/icons_mail.svg", alt="white_phone")
+                    h4 Write To US
+                p.content Fill out our form and we will contact you within 24 hours.
+                span.customer_email Emails: customer@exclusive.com
+                span.support_email Emails: support@exclusive.com
+        form.form(action="")
+            .form__header
+                input(type="text", name="name", id="name", placeholder="Your Name",required)
+                input(type="text", name="email", id="email", placeholder="Your Email",required)
+                input(type="text", name="phone", id="phone", placeholder="Your Phone",required)
+            textarea#massage(name="massage", cols="30", rows="10",placeholder="Your Massage")
+            +type_button('primary','Send Message')
