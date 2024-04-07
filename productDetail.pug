@@ -1,0 +1,100 @@
+extend ./views/layout/layout
+append stylesheet
+    link(rel="stylesheet", href="./styles/productDetail.css")
+block title
+  title Product Details
+block main
+    +RoadMap('Account / Gaming /','Havic HV G-92 Gamepad')
+    section.images_details 
+        .product_images 
+            .sub_images
+                .sub_image
+                    img(src="./images/controller.png", alt="")
+                .sub_image
+                    img(src="./images/controller.png", alt="")
+                .sub_image
+                    img(src="./images/controller.png", alt="")
+                .sub_image
+                    img(src="./images/controller.png", alt="")
+            .main_image
+                img(src="./images/white_ctl.svg", alt="")
+        .product_details
+            .top_section
+                h3 Havic HV G-92 Gamepad
+                .status
+                    .rating
+                        i.fa-solid.fa-star
+                        i.fa-solid.fa-star
+                        i.fa-solid.fa-star
+                        i.fa-solid.fa-star
+                        i.fa-solid.fa-star
+                        span (150 Reviews)
+                    .line 
+                    span.status__stock In Stock
+                span.price $192.00
+                .description 
+                    p PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.
+            .buy_section
+                .colorous
+                    h4 Colours:
+                    .colors
+                        .color
+                            input(type="radio", name="color", id="blue",checked)
+                            label(for="blue")
+                                .color__blue
+                        .color
+                            input(type="radio", name="color", id="red")
+                            label(for="red")
+                                .color__red
+                .sizing
+                    h4 Size:
+                    .sizes
+                        .size
+                            input(type="radio", name="size", id="XS",checked)
+                            label(for="XS") XS
+                        .size
+                            input(type="radio", name="size", id="S")
+                            label(for="S") S
+                        .size
+                            input(type="radio", name="size", id="M")
+                            label(for="M") M
+                        .size
+                            input(type="radio", name="size", id="L")
+                            label(for="L") L
+                        .size
+                            input(type="radio", name="size", id="XL")
+                            label(for="XL") XL
+                .buy
+                    .counter 
+                        input(type="button", value="-").minus
+                        input(type="text", value="1").quantity
+                        input(type="button", value="+").plus
+                    +type_button('primary','Buy Now')
+                    .add_favorite
+                        input(type="checkbox", name="favorite", id="favorite__product")
+                        label(for="favorite__product").favorite
+                            i.fa-regular.fa-heart
+            .delivery_section
+                .method.freeship
+                    img(src="./images/icons/freeShip.svg", alt="")
+                    .content
+                        h5 Free Delivery
+                        a(href="#") Enter your postal code for Delivery Availability
+                .method.return
+                    img(src="./images/icons/return.svg", alt="")
+                    .content
+                        h5 Return Delivery
+                        a(href="#") Free 30 Days Delivery Returns.
+    section.product__suggestion
+        .title 
+            h4 Related Item
+        .suggestion__lists
+            +product('GamingLaptop','ASUS FHD Gaming Laptop',960,1160,65)
+            +product('GamingMonitor','IPS LCD Gaming Monitor',1160,'',65)
+            +product('HavitGamePad','HAVIT HV-G92 Gamepad',560,'',65)
+            +product('AK900KeyBoard','AK-900 Wired Keyboard',200,'',65)
+            +product('gucci_bag','Gucci duffle bag',960,1160,0)
+            +product('RGB_cooler','RGB liquid CPU Cooler',1960,'',0)
+            +product('GP11_gamePad','GP11 Shooter USB Gamepad',550,'',0)
+            +product('Satin_jacket','Quilted Satin Jacket',750,'',0)
+        
